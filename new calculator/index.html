@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CREATE CALCULATOR</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <div class="container">
+        <input type="text" name="" id="display" class="display" disabled>
+        <div class="buttons">
+           <button class="clear" onclick="clearCalculate('C')">C</button>
+           <button onclick=" deleteCalculate('DEL')">DEL</button>
+           <button onclick="openCalculate('00')">00</button>
+           <button onclick="openCalculate('0')">0</button>
+
+           <button class="operator" onclick="openCalculate('+')">+</button>
+           <button onclick="openCalculate('7')">7</button>
+           <button onclick="openCalculate('8')">8</button>
+           <button onclick="openCalculate('9')">9</button>
+
+           <button class="operator" onclick="openCalculate('-')">-</button>
+           <button onclick="openCalculate('4')">4</button>
+           <button onclick="openCalculate('5')">5</button>
+           <button onclick="openCalculate('6')">6</button>
+
+           <button class="operator" onclick="openCalculate('*')">*</button>
+           <button onclick="openCalculate('1')">1</button>
+           <button onclick="openCalculate('2')">2</button>
+           <button onclick="openCalculate('3')">3</button>
+
+           <button class="operator" onclick="openCalculate('/')">/</button>
+           <button onclick="openCalculate('.')">.</button>
+           <button class="equal" onclick="equal('=')">=</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
